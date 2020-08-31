@@ -4,8 +4,8 @@ public class Test2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        int answer = 0;
         String s="abcabcdede";
+        int answer = 0;
         int num=1;
         String check="";
 		//한문자열을 받고 그 문자열을 1개 이상의 단위마다 잘라 압축한 문자열의 길이를 측정
