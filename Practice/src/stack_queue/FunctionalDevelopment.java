@@ -1,14 +1,11 @@
-package blind_recruitment;
+package stack_queue;
 
 import java.util.Arrays;
 
-public class Test {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] progresses= {95, 90, 99, 99, 80, 99};
-		int[] speeds= {1, 1, 1, 1, 1, 1};
-		int[] answer= {};
-		int complete=0,check=0;
+public class FunctionalDevelopment {
+    public int[] solution(int[] progresses, int[] speeds) {
+        int[] answer = {};
+        int complete=0,check=0;
 		for(int i=0;complete<progresses.length;) {
 			for(int j=complete;j<progresses.length;j++) {
 				if(progresses[j]+speeds[j]<100) {
@@ -28,7 +25,6 @@ public class Test {
 				i++;
 			}
 		}
-			
-		System.out.println(Arrays.toString(answer));
-	}
+        return answer;
+    }
 }
