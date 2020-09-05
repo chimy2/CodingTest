@@ -1,11 +1,8 @@
-package blind_recruitment;
+package exercise;
+import java.util.*;
 
-import java.util.Arrays;
-
-public class Test {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] arr={4,4,4,3,3};
+public class SameNumberHate {
+	public int[] solution(int []arr) {
 		int[] answer={arr[0]};
 		int num=0;
 		
@@ -16,6 +13,6 @@ public class Test {
 				answer[++num]=arr[i];
 			}
 		}
-		System.out.println(Arrays.toString(answer));
-	}
+        return answer;
+    }
 }
