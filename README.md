@@ -11,6 +11,7 @@
 
   - 연습문제
     1. [같은 숫자는 싫어 (71.9/100.0)](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/SameNumberHate.java)
+    2. [문자열 다루기 기본](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/StringHandlingBasic.java)
 
 <br>
 <hr/>
