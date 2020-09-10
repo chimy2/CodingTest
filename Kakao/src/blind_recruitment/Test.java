@@ -22,12 +22,6 @@ public class Test {
 //				System.out.printf("%d ",answer[i][j]);
 //			}System.out.println();
 //		}
-		String s="aa1234";
-		boolean d=true;
-		for(char a:s.toCharArray()) {System.out.println(a);
-			if(a<48||a>57) {
-				d=false;break;
-			}
-		}System.out.println(d);
+		
 	}
 }
