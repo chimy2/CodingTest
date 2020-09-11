@@ -1,11 +1,16 @@
 package blind_recruitment;
 
-import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Test2 {
+	int[] answer;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        LocalDate ld=LocalDate.of(2016, 4, 2);
-        System.out.println(ld.getDayOfWeek().toString().substring(0,3));
+		int[] numbers={3,3,3,3,0,0};
+
+
 	}
+
 }
