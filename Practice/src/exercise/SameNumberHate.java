@@ -2,15 +2,15 @@ package exercise;
 import java.util.*;
 
 public class SameNumberHate {
-	public int[] solution(int []arr) {
-		int[] answer=new int[2];
+    public List solution(int []arr) {
+		List<Integer> ls=new ArrayList();
 		int num=0;
-		
+		ls.add(arr[0]);
 		for(int i=1;i<arr.length;i++) {
-			if(answer[num]!=arr[i]) {
-				answer[++num]=arr[i];
+			if(ls.get(num)!=arr[i]) {
+				ls.add(arr[i]);num++;
 			}
 		}
-        return answer;
+        return ls;
     }
 }
