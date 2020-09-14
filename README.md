@@ -10,8 +10,11 @@
     1. [기능개발](https://github.com/chimy2/CodingTest/blob/master/Practice/src/stack_queue/FunctionalDevelopment.java)
 
   - 연습문제
-    1. [같은 숫자는 싫어 (71.9/100.0)](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/SameNumberHate.java)
+    1. [같은 숫자는 싫어](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/SameNumberHate.java)
     2. [문자열 다루기 기본](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/StringHandlingBasic.java)
+    3. [2016년](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/Year2016.java)
+    4. [문자열 내 p와 y의 개수](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/NumberOfPAndYInString.java)
+    5. [두 정수 사이의 합](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/SumBetweenTwoIntegers.java)
 
 <br>
 <hr/>
