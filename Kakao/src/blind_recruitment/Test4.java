@@ -2,7 +2,8 @@ package blind_recruitment;
 
 import java.util.*;
 
-public class Test4 {
+public class Test4{
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] answers={1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5};
