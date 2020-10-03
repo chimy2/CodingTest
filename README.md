@@ -10,7 +10,7 @@
     1. [기능개발](https://github.com/chimy2/CodingTest/blob/master/Practice/src/stack_queue/FunctionalDevelopment.java)
 
   - 완전탐색
-    1. [모의고사](https://github.com/chimy2/CodingTest/blob/master/Practice/src/brute_force_search/MockTest.java)
+    1. [모의고사 (35.7/100.0)](https://github.com/chimy2/CodingTest/blob/master/Practice/src/brute_force_search/MockTest.java)
   
   - 연습문제
     1. [같은 숫자는 싫어](https://github.com/chimy2/CodingTest/blob/master/Practice/src/exercise/SameNumberHate.java)
