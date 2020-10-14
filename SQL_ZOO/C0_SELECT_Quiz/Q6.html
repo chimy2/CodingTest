@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Q6 - SELECT Quiz</title>
+<link rel="stylesheet" href="../css/Basic.css">
+</head>
+<body>
+	<div class="content">
+		<header>
+			<h1>SELECT Quiz</h1>
+		</header>
+		<section>
+			<table class="main">
+				<thead>
+					<tr>
+						<td>name</td>
+						<td>region</td>
+						<td>area</td>
+						<td>population</td>
+						<td>gdp</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Afghanistan</td>
+						<td>South Asia</td>
+						<td class="right">652225</td>
+						<td class="right">26000000</td>
+						<td class="right"></td>
+					</tr>
+					<tr>
+						<td>Albania</td>
+						<td>Europe</td>
+						<td class="right">28728</td>
+						<td class="right">3200000</td>
+						<td class="right">6656000000</td>
+					</tr>
+					<tr>
+						<td>Algeria</td>
+						<td>Middle East</td>
+						<td class="right">2400000</td>
+						<td class="right">32900000</td>
+						<td class="right">75012000000</td>
+					</tr>
+					<tr>
+						<td>Andorra</td>
+						<td>Europe</td>
+						<td class="right">468</td>
+						<td class="right">64000</td>
+						<td class="right"></td>
+					</tr>
+					<tr>
+						<td colspan="5">...</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>6. Select the code that would show the countries with an area larger than 50000 and a population smaller than 10000000</h3>
+			<textarea readonly="readonly">
+SELECT name, area, population
+FROM world
+WHERE area > 50000 AND population < 10000000
+			</textarea>
+		</section>
+		<footer> Copyright &copy; 2020 chimy All Rights Reserved. </footer>
+	</div>
+</body>
+</html>

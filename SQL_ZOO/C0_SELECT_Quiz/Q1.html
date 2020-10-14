@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Q1 - SELECT Quiz</title>
+<style>
+html, body {
+	margin: 0;
+	height: 100%;
+	background-color: gray;
+}
+
+.content {
+	margin: auto;
+	width: 620px;
+	height: 700px;
+	background-color: white;
+}
+
+header {
+	padding: 20px 10px 10px;
+}
+
+section {
+	padding: 10px 20px 60px;
+}
+
+footer {
+	margin: auto;
+	width: 620px;
+	height: 89px;
+	background-color: black;
+	color: rgb(243, 180, 255);
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h1 {
+	margin: 0px;
+	height: 50px;
+}
+
+table {
+	margin: auto;
+	width: 580px;
+	border-collapse: collapse;
+}
+
+thead {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	padding: 9px;
+	border: thin solid black;
+}
+
+.right {
+	text-align: right;
+}
+
+textarea {
+	margin: auto;
+	padding: 15px;
+	width: 548px;
+	height: 120px;
+	resize: none;
+	width: 548px;
+	padding: 15px;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<header>
+			<h1>SELECT Quiz</h1>
+		</header>
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<td>name</td>
+						<td>region</td>
+						<td>area</td>
+						<td>population</td>
+						<td>gdp</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Afghanistan</td>
+						<td>South Asia</td>
+						<td class="right">652225</td>
+						<td class="right">26000000</td>
+						<td class="right"></td>
+					</tr>
+					<tr>
+						<td>Albania</td>
+						<td>Europe</td>
+						<td class="right">28728</td>
+						<td class="right">3200000</td>
+						<td class="right">6656000000</td>
+					</tr>
+					<tr>
+						<td>Algeria</td>
+						<td>Middle East</td>
+						<td class="right">2400000</td>
+						<td class="right">32900000</td>
+						<td class="right">75012000000</td>
+					</tr>
+					<tr>
+						<td>Andorra</td>
+						<td>Europe</td>
+						<td class="right">468</td>
+						<td class="right">64000</td>
+						<td class="right"></td>
+					</tr>
+					<tr>
+						<td colspan="5">...</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>1. Select the code which produces this table</h3>
+			<textarea readonly="readonly">
+SELECT name, population
+FROM world
+WHERE population BETWEEN 100000 AND 1250000
+			</textarea>
+		</section>
+		<footer> Copyright &copy; 2020 chimy All Rights Reserved. </footer>
+	</div>
+</body>
+</html>

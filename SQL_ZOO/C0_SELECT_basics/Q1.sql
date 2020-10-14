@@ -1,0 +1,1 @@
+select population from world where name='Germany'
