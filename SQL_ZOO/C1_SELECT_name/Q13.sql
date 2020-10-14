@@ -1,0 +1,1 @@
+select capital, name from world where capital like concat('%', name, '%')

@@ -1,0 +1,1 @@
+select name from world where capital = concat(name, ' city')
