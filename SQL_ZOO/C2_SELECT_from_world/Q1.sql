@@ -1,0 +1,1 @@
+select name, continent, population from world
