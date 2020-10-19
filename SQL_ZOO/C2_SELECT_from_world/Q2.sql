@@ -1,0 +1,1 @@
+select name from world where population >= 200000000
