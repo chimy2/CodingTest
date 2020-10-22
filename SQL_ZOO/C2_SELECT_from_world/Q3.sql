@@ -1,0 +1,1 @@
+select name, gdp/population from world where population>=200000000

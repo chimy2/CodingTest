@@ -1,0 +1,1 @@
+select name, population from world where name in ('france', 'germany', 'italy')
