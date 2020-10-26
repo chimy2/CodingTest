@@ -1,1 +1,0 @@
-select name, population/1000000 from world  where continent='south america'

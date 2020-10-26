@@ -1,1 +1,0 @@
-select name, area from world where between 200000 and 250000
