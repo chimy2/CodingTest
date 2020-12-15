@@ -2,7 +2,7 @@
 select name, continent, population from world
 
 -- 2
-select name from world where population >= 200000000
+select name from world where population>=200000000
 
 -- 3
 select name, gdp/population from world where population>=200000000
