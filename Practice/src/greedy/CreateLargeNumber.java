@@ -1,9 +1,10 @@
 package greedy;
 
-public class CreateLargeNumber {
+public class CreateLargeNumber {//큰 수 만들기
 
     public String solution1(String number, int k) {
-        String answer="";
+        //83.3 / 100.0
+    	String answer="";
 		boolean check=true;
 		char ch=number.charAt(0);
 		for(int i=1;i<number.length();i++) {
