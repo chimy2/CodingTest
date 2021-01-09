@@ -1,7 +1,7 @@
 package exercise;
 
 public class NextLargeNumber {
-
+//	다음 큰 숫자
     public int solution(int n) {
 	    String s=Integer.toBinaryString(n);
 	    int num=0;
