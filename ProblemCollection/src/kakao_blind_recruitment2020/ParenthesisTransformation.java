@@ -1,6 +1,7 @@
 package kakao_blind_recruitment2020;
 
 public class ParenthesisTransformation {
+//	괄호 변환
     public String solution(String p) {
         String answer = "", v = p, u = "";
         int num=0, before=0;
