@@ -3,62 +3,64 @@ package bf;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Q10971 {
+	static int min;
 	public static void main(String[] args) throws Exception {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int num=Integer.parseInt(br.readLine());
-		int min=0;
-		int index=0;
-		Stack<Integer> st=new Stack<Integer>();
 		int[][] arr=new int[num][num];
 		boolean[] state=new boolean[num];
 		for(int i=0;i<num;i++) {
 			StringTokenizer s=new StringTokenizer(br.readLine());
 			for(int j=0;j<num;j++) {
 				arr[i][j]=Integer.parseInt(s.nextToken());
+				min+=arr[i][j];
 			}
 		}
-		while(index<num) {
-			if(st.size()==num) {
-				min+=arr[st.peek()][st.get(0)];
-				index++;
-			}
-			if(state[index] || st.size()!=0 && index==st.peek()) {
-				index=(index+1)%num;
-			} else if(st.size()==0) {
-				st.add(index);
-				state[index]=true;
-				index=(index+1)%num;
-			} else {
-				min+=arr[st.peek()][index];
-				st.add(index);
-				state[index]=true;
-				index=(index+1)%num;
-			}
-			System.out.println(index+"요기"+st.size());
+		for(int i=0;i<num;i++) {
+			state[i]=true;
+			bf(arr, state, i, i, 0);
+			state[i]=false;
 		}
-		System.out.println(st);
+//		bf(arr, state, 0, 0, 0);
 		System.out.println(min);
-//		while(first<num) {
-//			int sum=0;
-//			int mid=first+1;
-//			st.push(first);
-//			state[first]=true;
-//			while(true) {
-//				if(!state[mid] && arr[st.peek()][mid]!=0) {
-//					state[mid]=true;
-//				} 
-//				mid++;
-//				if(count==10) break;
-//			}
-//			st.pop();
-//			first++;
-//		}
-		for(int[] a:arr) {
-			System.out.println(Arrays.toString(a));
+	}
+	
+	private static void bf(int[][] arr, boolean[] state, int start, int index, int result) {
+//		try {
+		if(index==arr.length && arr[index-1][start]!=0) {
+			result+=arr[index-1][start];
+			for(int i=0;i<state.length;i++) {
+				System.out.print(state[i]);
+			}
+			System.out.println(result);
+//			System.out.println();
+			if(result<min) min=result;
+			System.out.println("min="+min);
+			return;
 		}
+		for(int i=0;i<arr.length&&index<arr.length;i++) {
+			System.out.println(start+", "+index );
+			System.out.println("여기가, "+ i+", "+arr[index][i]);
+			if(arr[index][i]!=0 && !state[i]) {
+//				state[i]=true;
+//				bf(arr, state, i, index+1, result+arr[index][i]);
+//				state[i]=false;
+//			} else if(arr[index][i]!=0 && !state[i]) {
+//			} else if(arr[index][i]!=0 && !state[i] && (
+//					index!=arr.length-1 && i!=start || index==arr.length-1 && i==start)) {
+				state[i]=true;
+				System.out.println(start+", "+index +" , "+ i+", "+arr[index][i]);
+//				System.out.println(Arrays.toString(state));
+				bf(arr, state, start, index+1, result+arr[index][i]);
+				state[i]=false;
+			}
+		}
+		System.out.println("???");
+//		}catch(Exception e) {
+//			System.err.println(e.toString());
+//		}
 	}
 }
