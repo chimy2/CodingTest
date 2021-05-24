@@ -1,7 +1,6 @@
 package kakao_blind_recruitment2019;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class FailureLate {
     public Integer[] solution(int N, int[] stages) {
@@ -18,24 +17,18 @@ public class FailureLate {
             arr[i-1]=clear==0? 0 : (float)fail/clear;
             answer[i-1]=i;
         }
-        Arrays.sort(answer, new Comparator<Integer>() {
-			@Override
-			public int compare(Integer o1, Integer o2) {
-				if(arr[o1-1]<=arr[o2-1]) {
-					return 1;
-				} else {
-					return -1;
-				}
-			}
-		});
-        System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(answer));
+        
+        float[] arr2=Arrays.copyOf(arr, N);
+        Arrays.sort(arr2);
+        for(int i=0;i<N;i++) {
+        	for(int j=0;j<N;j++) {
+            	if(arr2[N-i-1]==arr[j]) {
+            		arr[j]=-1;
+            		answer[i]=j+1;
+            		break;
+            	}
+        	}
+        }
         return answer;
     }
-    public static void main(String[] args) {
-		FailureLate f=new FailureLate();
-		f.solution(5,new int[]{2, 1, 2, 6, 2, 4, 3, 3});
-		f.solution(4,new int[]{4, 4, 4, 4, 4});
-		f.solution(2,new int[]{1,1});
-	}
 }
