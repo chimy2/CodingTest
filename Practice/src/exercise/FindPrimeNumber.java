@@ -4,7 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindPrimeNumber {
-	//세번째 시도 75.0 / 100.0
+	//네 번째 시도 100.0 / 100.0
+    public int solution4(int n) {
+        int answer = 0;
+        boolean[] arr=new boolean[n+1];
+        for(int i=2;i<arr.length;i++) {
+            if(!arr[i]) {
+                answer++;
+                for(int j=(int)Math.pow(i, 2);j<=n;j+=i) {
+                    arr[j]=true;
+                }
+            }
+        }
+        return answer;
+    }
+	
+	//세 번째 시도 75.0 / 100.0
     public int solution3(int n) {
         int answer = 0;
 		List<Boolean> ls = new ArrayList<Boolean>();
@@ -25,7 +40,7 @@ public class FindPrimeNumber {
 		}
         return answer;
     }
-	//두번째 시도 75.0 / 100.0
+	//두 번째 시도 75.0 / 100.0
     public int solution2(int n) {
         List<Integer> ls=new ArrayList<Integer>();
         if(n>=2)ls.add(2);
@@ -41,7 +56,7 @@ public class FindPrimeNumber {
         return ls.size();
     }
     
-	//첫번째 시도 75.0 / 100.0
+	//첫 번째 시도 75.0 / 100.0
     public int solution(int n) {
         int answer=0;
         List<Integer> ls=new ArrayList<Integer>();
