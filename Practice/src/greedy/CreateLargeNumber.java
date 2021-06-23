@@ -1,9 +1,31 @@
 package greedy;
 
-public class CreateLargeNumber {//큰 수 만들기
+import java.util.Stack;
 
-    public String solution1(String number, int k) {
-        //83.3 / 100.0
+public class CreateLargeNumber {
+	//큰 수 만들기
+    public String solution2(String number, int k) {
+		int count=0;
+		Stack<Character> st=new Stack<Character>();
+		StringBuffer sb=new StringBuffer();
+		st.add(number.charAt(0));
+		for(int i=1;i<number.length();i++) {
+			char c=number.charAt(i);
+			while(!st.isEmpty() && st.peek()<c && count<k) {
+				st.pop();
+				count++;
+			} 
+			st.add(c);
+		}
+		for(int i=0;i<st.size();i++) {
+			sb.append(st.get(i));
+		}
+		sb.setLength(number.length()-k);
+        return sb.toString();
+    }
+	
+    //83.3 / 100.0
+    public String solution(String number, int k) {
     	String answer="";
 		boolean check=true;
 		char ch=number.charAt(0);
