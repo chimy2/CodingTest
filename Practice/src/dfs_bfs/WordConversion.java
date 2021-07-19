@@ -1,53 +1,42 @@
 package dfs_bfs;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class WordConversion {
-	public static void main(String[] args) {
-		String begin="hit", target="cog";
-		String[] words= {"hot", "dot", "dog", "lot", "log", "cog"};
+	public int answer=0;
+    
+    public int solution(String begin, String target, String[] words) {
+        boolean[] arr=new boolean[words.length];
+        
+		for(int i=0;i<words.length;i++) {
+			if(matchWord(begin, words[i])) {
+				arr[i]=true;
+				dfs(words, arr, words[i], target, 1);
+				arr[i]=false;
+			}
+		}
+        
+        return answer;
+    }
+    
+	public void dfs(String[] words, boolean[] arr, String begin, String target, int n) {
+		if(begin.equals(target)) {
+			if(answer==0 || answer>0 && answer>n) {
+				answer=n;
+			}
+		}
+		for(int i=0;i<words.length;i++) {
+			if(!arr[i] && matchWord(begin, words[i])) {
+				arr[i]=true;
+				dfs(words, arr, words[i], target, n+1);
+				arr[i]=false;
+			}
+		}
+	}
 
-        int answer = 51;
-        List<String> li=Arrays.asList(words);
-//        char[] c=new char[target.length()];
-        boolean[] state=new boolean[li.size()];
-//        for(int i=0;i<c.length;i++) {
-//            c[i]=target.charAt(i);
-//            if(c[i]==begin.charAt(i)) state[i]=true;
-//        }
-//		answer=Math.min(answer, dfs(li, c, state, target, i, 1));
-        if(li.contains(target)){
-        	for(int i=0;i<li.size();i++) {
-            	if(checkString(begin, li.get(i)))
-        		answer=Math.min(answer, dfs(li, li.get(i), target, state, i, 1));
-        	}
-        }
-        System.out.println(li);
-        System.out.println(answer);
-    }
-    
-    public static int dfs(List<String> li, String begin, String target, boolean[] state, int idx, int count) {
-    	if(begin.equals(target)) {
-    		System.out.println("도착");
-    		return count;
-    	}
-    	state[idx]=true;
-    	System.out.println(Arrays.toString(state));
-        for(int i=0;i<li.size();i++) {
-        	System.out.println(i);
-        	if(i!=idx && !state[i] && checkString(begin, li.get(i)))
-    		return dfs(li, li.get(i), target, state, i, count+1);
-        }
-		return 0;
-    }
-    
-    public static boolean checkString(String s1, String s2) {
-    	int count=0;
-    	for(int i=0;i<s1.length();i++) {
-    		if(s1.charAt(i)!=s2.charAt(i)) count++;
-    	}
-    	System.out.println("count="+count);
-    	return count==1;
-    }
+	public boolean matchWord(String begin, String word) {
+		int count =0;
+		for(int i=0;i<begin.length();i++) {
+			if(begin.charAt(i)==word.charAt(i)) count++;
+		}
+		return count==word.length()-1 ? true : false;
+	}
 }
