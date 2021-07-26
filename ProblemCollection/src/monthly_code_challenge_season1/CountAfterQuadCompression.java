@@ -1,7 +1,5 @@
 package monthly_code_challenge_season1;
 
-import java.util.Arrays;
-
 public class CountAfterQuadCompression {
     public int[] solution(int[][] arr) {
         int[] answer = new int[2];
@@ -9,7 +7,7 @@ public class CountAfterQuadCompression {
         for(int i=2;i<=arr.length;i*=2) {
             for(int j=0;j<arr.length;j+=i){
                 for(int k=0;k<arr[j].length;k+=i) {
-                    if(check(arr, state, j, k, i)) compress(state, j, k, i);
+                    if(check(arr, j, k, i)) compress(state, j, k, i);
                 }
             }
         }
@@ -21,7 +19,7 @@ public class CountAfterQuadCompression {
         return answer;
     }
     
-    public boolean check(int[][] arr, boolean[][] state, int x, int y, int n) {
+    public boolean check(int[][] arr, int x, int y, int n) {
         boolean result=true;
         int first=arr[x][y];
         for(int i=x;i<x+n && result;i++) {
