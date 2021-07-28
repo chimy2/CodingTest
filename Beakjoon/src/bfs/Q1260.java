@@ -3,10 +3,10 @@ package bfs;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Q1260 {
 	public static void main(String[] args) throws Exception {
@@ -16,7 +16,7 @@ public class Q1260 {
 		int num2=Integer.parseInt(setting[1]);
 		int num3=Integer.parseInt(setting[2]);
 		List<List<Integer>> li=new ArrayList<>();
-		boolean[] check=new boolean[num1];
+		boolean[] check=new boolean[num1+1];
 		for(int i=0;i<=num1;i++) {
 			li.add(new ArrayList<Integer>());
 		}
@@ -30,30 +30,36 @@ public class Q1260 {
 		for(int i=0;i<li.size();i++) {
 			Collections.sort(li.get(i));
 		}
-		System.out.println(li);
-//		System.out.print(num3);
 		dfs(li, check, num3);
+		System.out.println();
+		bfs(li, check, num3);
 	}
 	
 	public static void dfs(List<List<Integer>> li, boolean[] check, int x) {
-
 		System.out.print(x+" ");
 		check[x]=true;
 		for(int i=0;i<li.get(x).size();i++) {
 			int n=li.get(x).get(i);
 			if(!check[n]) {
-				System.out.println(Arrays.toString(check));
-				dfs(li, check, i);
+				dfs(li, check, n);
 			}
 		}
 	}
 	
-	public static void dfs2(List<List<Integer>> li, boolean[] check, int x) {
+	public static void bfs(List<List<Integer>> li, boolean[] check, int x) {
+		Queue<Integer> q=new LinkedList<>();
+		q.add(x);
 		check[x]=false;
-		System.out.print(x+1+" ");
-		for(int i=0;i<li.get(x).size();i++) {
-			int y=li.get(x).get(i);
-			if(check[y]) dfs2(li, check, y);
+		while(!q.isEmpty()) {
+			int i=q.poll();
+			System.out.print(i+" ");
+			for(int j=0;j<li.get(i).size();j++) {
+				int k=li.get(i).get(j);
+				if(check[k]) {
+					q.add(k);
+					check[k]=false;
+				}
+			}
 		}
 	}
 }
