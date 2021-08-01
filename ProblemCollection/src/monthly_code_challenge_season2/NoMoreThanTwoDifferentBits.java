@@ -1,0 +1,53 @@
+package monthly_code_challenge_season2;
+
+import java.util.Arrays;
+
+public class NoMoreThanTwoDifferentBits {
+	public static void main(String[] args) {
+		long[] numbers= {2, 7, 9};
+		long[] answer=new long[numbers.length];
+		for(int i=0;i<numbers.length;i++) {
+			if(numbers[i]%2==0) answer[i]=numbers[i]+1;
+			else {
+				StringBuilder sb=new StringBuilder(Long.toBinaryString(numbers[i]));
+				if(sb.lastIndexOf("0")!=-1) {
+					sb.setCharAt(sb.lastIndexOf("0"), '1');
+					answer[i]=Long.parseLong(sb.toString(), 2);
+				} else {
+					
+				}
+//				for(int j=origin.length()-1;j>0;j--) {
+//					if(origin.charAt(j)=='0') {
+//						origin.
+//					}
+//				}
+				for(long j=numbers[i]+2;;j++) {
+					String s=Long.toBinaryString(j);
+					System.out.println(numbers[i]^j);
+					break;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(answer));
+	}
+	
+//	81.8 / 100.0
+    public long[] solution(long[] numbers) {
+		long[] answer=new long[numbers.length];
+		for(int i=0;i<numbers.length;i++) {
+			String origin=Long.toBinaryString(numbers[i]);
+			for(long j=numbers[i]+1;;j++) {
+				String s=Long.toBinaryString(j);
+				int count=s.length()-origin.length();
+				for(int k=0;k<origin.length()&&count<3;k++) {
+					if(s.charAt(s.length()-k-1)!=origin.charAt(origin.length()-k-1)) count++;
+				}
+				if(count<=2) {
+					answer[i]=Long.parseLong(s, 2);
+					break;
+				}
+			}
+		}
+        return answer;
+    }
+}
