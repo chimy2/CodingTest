@@ -1,35 +1,28 @@
 package monthly_code_challenge_season2;
 
-import java.util.Arrays;
-
 public class NoMoreThanTwoDifferentBits {
-	public static void main(String[] args) {
-		long[] numbers= {2, 7, 9};
+//	100.0 / 100.0
+    public long[] solution2(long[] numbers) {
 		long[] answer=new long[numbers.length];
 		for(int i=0;i<numbers.length;i++) {
 			if(numbers[i]%2==0) answer[i]=numbers[i]+1;
 			else {
 				StringBuilder sb=new StringBuilder(Long.toBinaryString(numbers[i]));
-				if(sb.lastIndexOf("0")!=-1) {
-					sb.setCharAt(sb.lastIndexOf("0"), '1');
-					answer[i]=Long.parseLong(sb.toString(), 2);
+				int index=sb.lastIndexOf("0");
+				if(index!=-1) {
+					if(sb.indexOf("1", index)!=-1) {
+						sb.setCharAt(sb.indexOf("1", index), '0');
+					}
+					sb.setCharAt(index, '1');
 				} else {
-					
+                    sb.append('1');
+					sb.setCharAt(1, '0');
 				}
-//				for(int j=origin.length()-1;j>0;j--) {
-//					if(origin.charAt(j)=='0') {
-//						origin.
-//					}
-//				}
-				for(long j=numbers[i]+2;;j++) {
-					String s=Long.toBinaryString(j);
-					System.out.println(numbers[i]^j);
-					break;
-				}
+                answer[i]=Long.parseLong(sb.toString(), 2);
 			}
 		}
-		System.out.println(Arrays.toString(answer));
-	}
+        return answer;
+    }
 	
 //	81.8 / 100.0
     public long[] solution(long[] numbers) {
