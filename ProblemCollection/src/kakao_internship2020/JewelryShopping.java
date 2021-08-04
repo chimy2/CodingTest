@@ -1,40 +1,44 @@
 package kakao_internship2020;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class JewelryShopping {
-	public static void main(String[] args) {
-//		String[] gems= {"DIA", "RUBY", "RUBY", "DIA", "DIA", "EMERALD", "SAPPHIRE", "DIA"};
-		String[] gems= {"A", "B", "C", "B", "F", "D", "A", "F", "B", "D", "B"};
-//		String[] gems= {"A", "B", "B", "B", "B", "B", "B", "C", "B", "A"};
-//		String[] gems= {"AA", "AB", "AC", "AA", "AC"};
-//		String[] gems= {"ZZZ", "YYY", "NNNN", "YYY", "BBB"};
+//	100.0 / 100.0
+    public int[] solution4(String[] gems) {
         int[] answer = {1, gems.length};
         int min=0;
         int max=0;
-        Queue<String> q=new LinkedList<String>();
         HashMap<String, Integer> hm=new HashMap<String, Integer>();
-        String s="";
         for(int i=0;i<gems.length;i++) {
             hm.put(gems[i], hm.containsKey(gems[i]) ? hm.get(gems[i])+1 : 1);
         }
         
         int len=hm.size();
         hm.clear();
-        while(max<gems.length) {
+        while(true) {
         	if(hm.size()<len) {
+        		if(max+1>gems.length) break;
+        		hm.put(gems[max], hm.containsKey(gems[max]) ? hm.get(gems[max])+1 : 1);
         		max++;
+        	} else {
+        		if(hm.get(gems[min])==1) {
+        			hm.remove(gems[min]);
+        		} else {
+        			hm.put(gems[min], hm.get(gems[min])-1);
+        		}
+    			min++;        		
+        	}
+        	if(len==hm.size() && max-min-1<answer[1]-answer[0]) {
+        		answer[0]=min+1;
+        		answer[1]=max;
         	}
         }
-        System.out.println(hm);
-        System.out.println(Arrays.toString(answer));
-	}
+        return answer;
+    }
 	
 //	35.6 / 100.0
-    public int[] solution3(String[] gems) {int[] answer = {1, gems.length};
+    public int[] solution3(String[] gems) {
+    	int[] answer = {1, gems.length};
         int min=1;
         int max=gems.length;
         HashMap<String, Integer> hm=new HashMap<String, Integer>();
