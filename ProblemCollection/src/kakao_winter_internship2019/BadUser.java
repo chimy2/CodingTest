@@ -1,26 +1,38 @@
 package kakao_winter_internship2019;
 
+import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BadUser {
-	public static void main(String[] args) {
-		String[] user_id= {"frodo", "fradi", "crodo", "abc123", "frodoc"};
-		String[] banned_id= {"fr*d*", "abc1**"};
-		int[] arr=new int[banned_id.length];
-		int answer=1;
+    public int solution(String[] user_id, String[] banned_id) {
+        HashSet<String> hs=new HashSet<String>();
+		boolean[] checked=new boolean[user_id.length];
 		for(int i=0;i<banned_id.length;i++) {
 			banned_id[i]=banned_id[i].replaceAll("\\*", "(\\\\w)");
-			for(int j=0;j<user_id.length;j++) {
-				Matcher m=Pattern.compile(banned_id[i]).matcher(user_id[j]);
-				if(m.find() && m.group().equals(user_id[j])) {
-					arr[i]++;
-				}
+		}
+		recursion(user_id, banned_id, checked, hs, 0);
+        return hs.size();
+    }
+
+	public void recursion(String[] user_id, String[] banned_id, boolean[] checked, HashSet<String> hs, int x) {
+		if(banned_id.length<=x) {
+			StringBuffer s=new StringBuffer();
+			for(int i=0;i<checked.length;i++) {
+				if(checked[i]) s.append(i);
+			}
+			hs.add(s.toString());
+			return;
+		}
+		
+		Pattern p=Pattern.compile(banned_id[x]);
+		for(int i=0;i<user_id.length;i++) {
+			Matcher m=p.matcher(user_id[i]);
+			if(!checked[i] && m.find() && m.group().equals(user_id[i])) {
+				checked[i]=true;
+				recursion(user_id, banned_id, checked, hs, x+1);
+				checked[i]=false;
 			}
 		}
-		for(int i=0;i<arr.length;i++) {
-			answer*=arr[i];
-		}
-		System.out.println(answer);
 	}
 }
