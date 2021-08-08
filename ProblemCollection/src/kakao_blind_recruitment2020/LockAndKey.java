@@ -1,23 +1,30 @@
 package kakao_blind_recruitment2020;
 
-import java.util.Arrays;
-
 public class LockAndKey {
-	public static void main(String[] args) {
-		int[][] key= {{0,0,0},{1,0,0},{0,1,1}};
-		int[][] lock= {{1,1,1},{1,1,0},{1,0,1}};
-		
+    public boolean solution(int[][] key, int[][] lock) {
+        boolean answer=false;
+		int lenK=key.length;
+		int lenL=lock.length;
 		for(int i=0;i<4;i++) {
-//			for(int j=0;j<lock.length;j++) {
-//				for(int k=0;k<lock[i].length;k++) {
-//					int[][] result=lock.clone();
-//					for(int l=key.length-1;l>=0;l--) {
-//						
-//					}
-//				}
-//			}
+			for(int j=0;j<lenK+lenL-1 && !answer;j++) {
+				for(int k=0;k<lenK+lenL-1 && !answer;k++) {
+					for(int l=0;l<lenL*lenL;l++) {
+						int x=l/lenL;
+						int y=l%lenL;
+						int x2=lenK-j+x-1;
+						int y2=lenK-k+y-1;
+						if(x2<0 || x2>=lenK || y2<0 || y2>=lenK) {
+							if(lock[x][y]<1) break;
+						} else if(lock[x][y]+key[x2][y2]!=1) {
+                            break;
+						}
+						if(l==lenL*lenL-1) answer=true;
+					}
+				}
+			} 
 			key=rotate(key);
 		}
+        return answer;
 	}
 	
 	public static int[][] rotate(int[][] key) {
