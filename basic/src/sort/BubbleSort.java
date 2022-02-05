@@ -13,7 +13,7 @@ public class BubbleSort {
 //	알고리즘 : 수학, 컴퓨터과학 등에서 문제를 해결하기 위해 정해진 일련의 절차
 //	제자리 정렬(in-place sorting) : 정렬하고자 하는 배열안에서 교환하는 정렬
 //	안정 정렬(stable sort) : 중복된 값을 입력 순서와 동일하게 정렬
-//	공간복잡도의 O(1) : 반복문의 n번 반복과 상관없이 고정 공간만을 사용
+//	공간복잡도의 O(1) : 배열의 크기(n)가 커짐과 상관없이 고정 공간만을 사용
 	
 	public void bubbleSort(int[] arr) {
 		for(int i=0;i<arr.length-1;i++) {
