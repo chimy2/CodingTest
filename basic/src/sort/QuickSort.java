@@ -13,7 +13,7 @@ public class QuickSort {
 //	제자리 정렬(in-place sorting), 불안정 정렬(unstable sort)
 //	장점 : 속도가 빠르고 추가 메모리 공간이 필요하지 않다(제자리 정렬)
 //	단점 : 정렬된 배열에 경우 불균형 분할로 인해 오히려 비효율적일 수 있다
-//	분할 정복 : 문제를 작은 문제로 분할 후 그 작은 문제를 정복하여 문제를 해결하는 알고리즘
+//	분할 정복 : 문제를 작은 문제로 분할하고 그 작은 문제를 정복하여 문제를 해결하는 알고리즘
 	
 	public void quickSort(int[] arr, int start, int end) {
 		if(start>=end) return;
