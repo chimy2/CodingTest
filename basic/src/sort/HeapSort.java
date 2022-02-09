@@ -2,14 +2,14 @@ package sort;
 
 public class HeapSort {
 
-//	ÈüÁ¤·Ä
-//	ÃÖ´ë/ÃÖ¼Ò Èü Æ®¸®¸¦ ±¸¼ºÇØ Á¤·ÄÇÏ´Â ¾Ë°í¸®Áò
-//	½Ã°£º¹Àâµµ : O(nlogn)
-//	°ø°£º¹Àâµµ : O(1)
-//	Á¦ÀÚ¸® Á¤·Ä(in-place sorting), ºÒ¾ÈÁ¤ Á¤·Ä(unstable sort)
-//	ÀåÁ¡ : ´ë¿ë·® µ¥ÀÌÅÍ¸¦ Á¤·ÄÇÏ´Âµ¥ À¯¿ëÇÏ´Ù
-//	´ÜÁ¡ : ÃÖ¾ÇÀÇ °æ¿ì ´Ù¸¥ O(nlogn) ¾Ë°í¸®Áò º¸´Ù ´À¸± ¼ö ÀÖ´Ù
-//	¿ÏÀüÀÌÁøÆ®¸® : »ðÀÔ ½Ã ¿ÞÂÊºÎÅÍ Â÷·Ê´ë·Î Ãß°¡ÇÏ´Â ÀÌÁø Æ®¸®
+//	íž™ì •ë ¬
+//	ìµœëŒ€/ìµœì†Œ íž™ íŠ¸ë¦¬ë¥¼ êµ¬ì„±í•´ ì •ë ¬í•˜ëŠ” ì•Œê³ ë¦¬ì¦˜
+//	ì‹œê°„ë³µìž¡ë„ : O(nlogn)
+//	ê³µê°„ë³µìž¡ë„ : O(1)
+//	ì œìžë¦¬ ì •ë ¬(in-place sorting), ë¶ˆì•ˆì • ì •ë ¬(unstable sort)
+//	ìž¥ì  : ëŒ€ìš©ëŸ‰ ë°ì´í„°ë¥¼ ì •ë ¬í•˜ëŠ”ë° ìœ ìš©í•˜ë‹¤
+//	ë‹¨ì  : ìµœì•…ì˜ ê²½ìš° ë‹¤ë¥¸ O(nlogn) ì•Œê³ ë¦¬ì¦˜ ë³´ë‹¤ ëŠë¦´ ìˆ˜ ìžˆë‹¤
+//	ì™„ì „ì´ì§„íŠ¸ë¦¬ : ì‚½ìž… ì‹œ ì™¼ìª½ë¶€í„° ì°¨ë¡€ëŒ€ë¡œ ì¶”ê°€í•˜ëŠ” ì´ì§„ íŠ¸ë¦¬
 
 	public void heapify(int arr[], int n, int i) {
 		int p = i;

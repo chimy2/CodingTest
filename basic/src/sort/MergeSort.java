@@ -2,39 +2,40 @@ package sort;
 
 public class MergeSort {
 
-//	ÇÕº´Á¤·Ä
-//	ºÐÇÒ Á¤º¹ ¹æ¹ýÀ¸·Î Á¤·Ä
-//	ÄüÁ¤·Ä°ú ´Þ¸® ¸ðµç ¿ø¼Ò¸¦ ÂÉ°µ µÚ(ºÐÇÒ) ÇÕÄ¡¸é¼­ Á¤·Ä(Á¤º¹)ÇØ°¡´Â ¾Ë°í¸®Áò
-//	½Ã°£º¹Àâµµ : O(nlogn)
-//	°ø°£º¹Àâµµ : ¬°(n)
-//	¾ÈÁ¤ Á¤·Ä(stable sort)
-//	ÀåÁ¡ : ¿¬°á¸®½ºÆ® Á¤·Ä ½Ã È¿À²ÀûÀÌ´Ù
-//	´ÜÁ¡ : ÇÕº´À» À§ÇÑ Ãß°¡ ¸Þ¸ð¸® °ø°£ÀÌ ÇÊ¿äÇÏ´Ù
-//	ÄüÁ¤·Ä°ú ÇÕº´Á¤·ÄÀÇ Á¤·Ä¹æ½Ä Â÷ÀÌ
-//	ÄüÁ¤·Ä : ÇÇ¹þÀ» ±âÁØÀ¸·Î ÀÛÀº °ª°ú Å« °ªÀ» ³ª´©¾î ºÐÇÒÇÏ°í °¢ ºÎºÐÀ» Á¤·ÄÇÏ´Â °úÁ¤À» ¹Ýº¹ÇÔ
-//	ÇÕº´Á¤·Ä : Àý¹Ý¾¿ ³ª´² ºÐÇÒÇÏ°í °¢ºÎºÐÀ» ÇÕÄ¡¸é¼­ Á¤·ÄÀÌ µÊ
-	
+//	í•©ë³‘ì •ë ¬
+//	ë¶„í•  ì •ë³µ ë°©ë²•ìœ¼ë¡œ ì •ë ¬
+//	í€µì •ë ¬ê³¼ ë‹¬ë¦¬ ëª¨ë“  ì›ì†Œë¥¼ ìª¼ê°  ë’¤(ë¶„í• ) í•©ì¹˜ë©´ì„œ ì •ë ¬(ì •ë³µ)í•´ê°€ëŠ” ì•Œê³ ë¦¬ì¦˜
+//	ì‹œê°„ë³µìž¡ë„ : O(nlogn)
+//	ê³µê°„ë³µìž¡ë„ : Ðž(n)
+//	ì•ˆì • ì •ë ¬(stable sort)
+//	ìž¥ì  : ì—°ê²°ë¦¬ìŠ¤íŠ¸ ì •ë ¬ ì‹œ íš¨ìœ¨ì ì´ë‹¤
+//	ë‹¨ì  : í•©ë³‘ì„ ìœ„í•œ ì¶”ê°€ ë©”ëª¨ë¦¬ ê³µê°„ì´ í•„ìš”í•˜ë‹¤
+//	í€µì •ë ¬ê³¼ í•©ë³‘ì •ë ¬ì˜ ì •ë ¬ë°©ì‹ ì°¨ì´
+//	í€µì •ë ¬ : í”¼ë²—ì„ ê¸°ì¤€ìœ¼ë¡œ ìž‘ì€ ê°’ê³¼ í° ê°’ì„ ë‚˜ëˆ„ì–´ ë¶„í• í•˜ê³  ê° ë¶€ë¶„ì„ ì •ë ¬í•˜ëŠ” ê³¼ì •ì„ ë°˜ë³µí•¨
+//	í•©ë³‘ì •ë ¬ : ì ˆë°˜ì”© ë‚˜ëˆ  ë¶„í• í•˜ê³  ê°ë¶€ë¶„ì„ í•©ì¹˜ë©´ì„œ ì •ë ¬ì´ ë¨
+
 	public void mergeSort(int[] arr, int[] temp, int start, int end) {
-		if(start<end) {
-			int mid=(start+end)/2;
+		if (start < end) {
+			int mid = (start + end) / 2;
 			mergeSort(arr, temp, start, mid);
-			mergeSort(arr, temp, mid+1, end);
+			mergeSort(arr, temp, mid + 1, end);
 			merge(arr, temp, start, mid, end);
 		}
 	}
-	
+
 	public void merge(int[] arr, int[] temp, int start, int mid, int end) {
-		int index=start, left=start, right=mid+1;
-		for(int i=start;i<=end;i++) temp[i]=arr[i];
-		while(left<=mid && right<=end) {
-			if(temp[left]<=temp[right]) {
-				arr[index++]=temp[left++];
+		int index = start, left = start, right = mid + 1;
+		for (int i = start; i <= end; i++)
+			temp[i] = arr[i];
+		while (left <= mid && right <= end) {
+			if (temp[left] <= temp[right]) {
+				arr[index++] = temp[left++];
 			} else {
-				arr[index++]=temp[right++];
+				arr[index++] = temp[right++];
 			}
 		}
-		for(int i=0;i<=mid-left;i++) {
-			arr[index+i]=temp[left+i];
+		for (int i = 0; i <= mid - left; i++) {
+			arr[index + i] = temp[left + i];
 		}
 	}
 }

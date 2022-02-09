@@ -1,31 +1,31 @@
 package sort;
 
 public class SelectionSort {
-	
-//	¼±ÅÃÁ¤·Ä
-//	Á¶°Ç¿¡ ¸Â´Â ¿ø¼Ò¸¦ ¼±ÅÃÇÏ°í(Ã£°í) Á¤ÇØÁø À§Ä¡·Î ¿Å±â´Â(±³È¯ÇÏ´Â) Á¤·Ä ¾Ë°í¸®Áò
-//	½Ã°£º¹Àâµµ : O(n^2)
-//	°ø°£º¹Àâµµ : O(1)
-//	Á¦ÀÚ¸® Á¤·Ä(in-place sorting), ºÒ¾ÈÁ¤ Á¤·Ä(unstable sort)
-//	ÀåÁ¡ : ¾Ë°í¸®ÁòÀÌ ´Ü¼øÇÏ¿© ÄÚµå ±¸ÇöÀÌ ½±´Ù
-//		  ºñ±³ È½¼ö´Â ¸¹Áö¸¸ ±³È¯ È½¼ö°¡ Àû¾î ¸¹Àº ±³È¯ÀÌ ÇÊ¿äÇÑ ÀÚ·á»óÅÂ¿¡¼­ È¿À²ÀûÀÌ´Ù
-//	´ÜÁ¡ : ½Ã°£º¹Àâµµ°¡ ºñÈ¿À²ÀûÀÌ¸ç ºÒ¾ÈÁ¤ Á¤·ÄÀÌ´Ù
-//	°³¼± ¹æ¹ý : Å½»ö ½Ã µ¿ÀÏÇÑ °ªÀÌ ÀÖ´Ù¸é ÇÔ²² Á¤·Ä,
-//			  Å½»ö ½Ã ÃÖ¼Ú°ª°ú ÃÖ´ñ°ªÀ» °°ÀÌ Ã£¾Æ Å½»öÈ½¼ö¸¦ Àý¹ÝÀ¸·Î ÁÙÀÏ ¼ö ÀÖ´Ù(ÀÌÁß ¼±ÅÃ Á¤·Ä)
-//	ºÒ¾ÈÁ¤ Á¤·Ä(unstable sort) : Áßº¹µÈ °ªÀ» ÀÔ·Â¼ø¼­¿Í ¹«°üÇÏ°Ô Á¤·Ä
-	
+
+//	ì„ íƒì •ë ¬
+//	ì¡°ê±´ì— ë§žëŠ” ì›ì†Œë¥¼ ì„ íƒí•˜ê³ (ì°¾ê³ ) ì •í•´ì§„ ìœ„ì¹˜ë¡œ ì˜®ê¸°ëŠ”(êµí™˜í•˜ëŠ”) ì •ë ¬ ì•Œê³ ë¦¬ì¦˜
+//	ì‹œê°„ë³µìž¡ë„ : O(n^2)
+//	ê³µê°„ë³µìž¡ë„ : O(1)
+//	ì œìžë¦¬ ì •ë ¬(in-place sorting), ë¶ˆì•ˆì • ì •ë ¬(unstable sort)
+//	ìž¥ì  : ì•Œê³ ë¦¬ì¦˜ì´ ë‹¨ìˆœí•˜ì—¬ ì½”ë“œ êµ¬í˜„ì´ ì‰½ë‹¤
+//		  ë¹„êµ íšŸìˆ˜ëŠ” ë§Žì§€ë§Œ êµí™˜ íšŸìˆ˜ê°€ ì ì–´ ë§Žì€ êµí™˜ì´ í•„ìš”í•œ ìžë£Œìƒíƒœì—ì„œ íš¨ìœ¨ì ì´ë‹¤
+//	ë‹¨ì  : ì‹œê°„ë³µìž¡ë„ê°€ ë¹„íš¨ìœ¨ì ì´ë©° ë¶ˆì•ˆì • ì •ë ¬ì´ë‹¤
+//	ê°œì„  ë°©ë²• : íƒìƒ‰ ì‹œ ë™ì¼í•œ ê°’ì´ ìžˆë‹¤ë©´ í•¨ê»˜ ì •ë ¬,
+//			  íƒìƒ‰ ì‹œ ìµœì†Ÿê°’ê³¼ ìµœëŒ“ê°’ì„ ê°™ì´ ì°¾ì•„ íƒìƒ‰íšŸìˆ˜ë¥¼ ì ˆë°˜ìœ¼ë¡œ ì¤„ì¼ ìˆ˜ ìžˆë‹¤(ì´ì¤‘ ì„ íƒ ì •ë ¬)
+//	ë¶ˆì•ˆì • ì •ë ¬(unstable sort) : ì¤‘ë³µëœ ê°’ì„ ìž…ë ¥ìˆœì„œì™€ ë¬´ê´€í•˜ê²Œ ì •ë ¬
+
 	public void selectionSort(int[] arr) {
-		int min=0, temp=0;
-		for(int i=0;i<arr.length-1;i++) {
-			min=i;
-			for(int j=i+1;j<arr.length;j++) {
-				if(arr[min]>arr[j]) {
-					min=j;
+		int min = 0, temp = 0;
+		for (int i = 0; i < arr.length - 1; i++) {
+			min = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[min] > arr[j]) {
+					min = j;
 				}
 			}
-			temp=arr[i];
-			arr[i]=arr[min];
-			arr[min]=temp;
+			temp = arr[i];
+			arr[i] = arr[min];
+			arr[min] = temp;
 		}
 	}
 }

@@ -1,32 +1,35 @@
 package sort;
 
 public class QuickSort {
-	
-//	ÄüÁ¤·Ä
-//	ºÐÇÒ Á¤º¹ ¹æ¹ýÀ¸·Î Á¤·Ä
-//	±âÁØ ¿ø¼Ò ÇÇ¹þ(pivot)À» Á¤ÇÏ°í ¿ÞÂÊ¿¡´Â ÇÇ¹þº¸´Ù ÀÛÀº °ªÀ» ¿À¸¥ÂÊ¿¡´Â Å«°ªÀÌ ¿Àµµ·Ï ³ª´©°í(ºÐÇÒ)
-//	ºÐÇÒµÈ µÎ ¹è¿­À» °¢°¢ Àç±ÍÀûÀ¸·Î °úÁ¤À» ¹Ýº¹ÇÑ´Ù(Á¤º¹)
-//	½Ã°£º¹Àâµµ : ÃÖ¼±, Æò±Õ => O(nlogn), ÃÖ¾Ç => O(n^2)
-//	°ø°£º¹Àâµµ : Æò±Õ => O(logn), ÃÖ¾Ç => O(n)
-//	Á¦ÀÚ¸® Á¤·Ä(in-place sorting), ºÒ¾ÈÁ¤ Á¤·Ä(unstable sort)
-//	ÀåÁ¡ : ¼Óµµ°¡ ºü¸£°í Ãß°¡ ¸Þ¸ð¸® °ø°£ÀÌ ÇÊ¿äÇÏÁö ¾Ê´Ù(Á¦ÀÚ¸® Á¤·Ä)
-//	´ÜÁ¡ : Á¤·ÄµÈ ¹è¿­¿¡ °æ¿ì ºÒ±ÕÇü ºÐÇÒ·Î ÀÎÇØ ¿ÀÈ÷·Á ºñÈ¿À²ÀûÀÏ ¼ö ÀÖ´Ù
-//	ºÐÇÒ Á¤º¹ : ¹®Á¦¸¦ ÀÛÀº ¹®Á¦·Î ºÐÇÒÇÏ°í ±× ÀÛÀº ¹®Á¦¸¦ Á¤º¹ÇÏ¿© ¹®Á¦¸¦ ÇØ°áÇÏ´Â ¾Ë°í¸®Áò
-	
+
+//	í€µì •ë ¬
+//	ë¶„í•  ì •ë³µ ë°©ë²•ìœ¼ë¡œ ì •ë ¬
+//	ê¸°ì¤€ ì›ì†Œ í”¼ë²—(pivot)ì„ ì •í•˜ê³  ì™¼ìª½ì—ëŠ” í”¼ë²—ë³´ë‹¤ ìž‘ì€ ê°’ì„ ì˜¤ë¥¸ìª½ì—ëŠ” í°ê°’ì´ ì˜¤ë„ë¡ ë‚˜ëˆ„ê³ (ë¶„í• )
+//	ë¶„í• ëœ ë‘ ë°°ì—´ì„ ê°ê° ìž¬ê·€ì ìœ¼ë¡œ ê³¼ì •ì„ ë°˜ë³µí•œë‹¤(ì •ë³µ)
+//	ì‹œê°„ë³µìž¡ë„ : ìµœì„ , í‰ê·  => O(nlogn), ìµœì•… => O(n^2)
+//	ê³µê°„ë³µìž¡ë„ : í‰ê·  => O(logn), ìµœì•… => O(n)
+//	ì œìžë¦¬ ì •ë ¬(in-place sorting), ë¶ˆì•ˆì • ì •ë ¬(unstable sort)
+//	ìž¥ì  : ì†ë„ê°€ ë¹ ë¥´ê³  ì¶”ê°€ ë©”ëª¨ë¦¬ ê³µê°„ì´ í•„ìš”í•˜ì§€ ì•Šë‹¤(ì œìžë¦¬ ì •ë ¬)
+//	ë‹¨ì  : ì •ë ¬ëœ ë°°ì—´ì— ê²½ìš° ë¶ˆê· í˜• ë¶„í• ë¡œ ì¸í•´ ì˜¤ížˆë ¤ ë¹„íš¨ìœ¨ì ì¼ ìˆ˜ ìžˆë‹¤
+//	ë¶„í•  ì •ë³µ : ë¬¸ì œë¥¼ ìž‘ì€ ë¬¸ì œë¡œ ë¶„í• í•˜ê³  ê·¸ ìž‘ì€ ë¬¸ì œë¥¼ ì •ë³µí•˜ì—¬ ë¬¸ì œë¥¼ í•´ê²°í•˜ëŠ” ì•Œê³ ë¦¬ì¦˜
+
 	public void quickSort(int[] arr, int start, int end) {
-		if(start>=end) return;
-		int pivot=arr[(start+end)/2];
-		int left=start, right=end;
-		while(left<=right) {
-			while(arr[left]<pivot) left++;
-			while(arr[right]>pivot) right--;
-			if(left<=right) {
-				int temp=arr[left];
-				arr[left++]=arr[right];
-				arr[right--]=temp;
+		if (start >= end)
+			return;
+		int pivot = arr[(start + end) / 2];
+		int left = start, right = end;
+		while (left <= right) {
+			while (arr[left] < pivot)
+				left++;
+			while (arr[right] > pivot)
+				right--;
+			if (left <= right) {
+				int temp = arr[left];
+				arr[left++] = arr[right];
+				arr[right--] = temp;
 			}
 		}
 		quickSort(arr, start, right);
 		quickSort(arr, left, end);
-	} 
+	}
 }
