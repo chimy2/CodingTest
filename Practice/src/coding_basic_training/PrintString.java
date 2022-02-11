@@ -2,7 +2,7 @@ package coding_basic_training;
 
 import java.util.Scanner;
 
-public class OutputString {
+public class PrintString {
 //	문자열 출력하기
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
