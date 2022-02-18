@@ -7,6 +7,6 @@ print(f"{a} + {b} = {a + b}")
 # c = a + b
 # print('{} + {} = {}'.format(a, b, c))
 
-# 처음문제풀이
+# 처음 문제풀이
 # a, b = map(int, input().strip().split(' '))
 # print(a, "+", b, "=", a + b)
