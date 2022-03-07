@@ -6,8 +6,10 @@ function solution(n, control) {
                 break;
             case "s":
                 n--;
+                break;
             case "a":
                 n -= 10;
+                break;
             case "d":
                 n += 10;
         }
