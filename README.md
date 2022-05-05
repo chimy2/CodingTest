@@ -80,9 +80,320 @@
 > 20. flag에 따라 다른 값 반환하기 ( [Java]() | 
 [JavaScript]() | 
 [Python]() )
-> 2. 반환하기 ( [Java]() | 
+> 21. 코드 처리하기 ( [Java]() | 
 [JavaScript]() | 
 [Python]() )
+> 22. 등차수열의 특정한 항만 더하기 ( [Java]() | 
+[JavaScript]() | 
+[Python]() )
+> 23. 주사위 게임 2 ( [Java]() | 
+[JavaScript]() | 
+[Python]() )
+> 24. 원소들의 곱과 합 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 25. 이어 붙인 수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 26. 마지막 두 원소 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 27. 수 조작하기1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 28. 수 조작하기2 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 29. 수열과 구간 쿼리3 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 30. 수열과 구간 쿼리2 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 31. 수열과 구간 쿼리4 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 32. 배열 만들기2 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 33. 카운트 업 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 34. 콜라츠 수열 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 35. 배열 만들기4 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 36. 간단한 논리 연산 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 37. 주사위 게임3 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 38. 글자 이어 붙여 문자열 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 39. 9로 나눈 나머지 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 40. 문자열 여러 번 뒤집기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 41. 배열 만들기5 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 42. 부분 문자열 이어 붙여 문자열 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 43. 문자열의 뒤의 n글자 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 44. 접미사 배열 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 45. 접미사인지 확인하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 46. 문자열의 앞의 n글자 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 47. 접두사인지 확인하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 48. 문자열 뒤집기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 49. 세로 읽기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 50. qr code ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 51. 문자 개수 세기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 52. 배열 만들기1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 53. 글자 지우기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 54. 카운트 다운 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 55. 가까운 1 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 56. 리스트 자르기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 57. 첫 번째로 나오는 음수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 58. 배열 만들기3 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 59. 2의 영역 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 60. 배열 조각하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 61. n 번째 원소부터 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 62. 순서 바꾸기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 63. 왼쪽 오른쪽 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 64. n 번째 원소까지 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 65. n개 간격의 원소들 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 66. 홀수 vs 짝수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 67. 5명씩 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 68. 할 일 목록 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 69. n보다 커질 때까지 더하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 70. 수열과 구간 쿼리1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 71. 조건에 맞게 수열 변환하기1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 72. 조건에 맞게 수열 변환하기2 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 73. 1로 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 74. 길이에 따른 연산 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 75. 원하는 문자열 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 76. 대문자로 바꾸기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 77. 소문자로 바꾸기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 78. 배열에서 문자열 대소문자 변환하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 79. A 강조하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 80. 특정한 문자를 대문자로 바꾸기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 81. 특정 문자열로 끝나는 가장 긴 부분 문자열 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 82. 문자열이 몇 번 등장하는지 세기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 83. ad 제거하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 84. 공백으로 구분하기1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 85. 공백으로 구분하기2 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 86. x 사이의 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 87. 문자열 잘라서 정렬하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 88. 간단한 식 계산하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 89. 문자열 바꿔서 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 90. rny_string ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 91. 세 개의 구분자 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 92. 배열의 원소만큼 추가하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 93. 빈 배열에 추가, 삭제하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 94. 배열 만들기6 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 95. 무작위로 K개의 수 뽑기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 96. 배열의 길이를 2의 거듭제곱으로 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 97. 배열 비교하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 98. 문자열 묶기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 99. 배열의 길이에 따라 다른 연산하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 100. 뒤에서 5등까지 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 101. 뒤에서 5등 위로 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 102. 전국 대회 선발 고사 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 103. 정수 부분 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 104. 문자열 정수의 합 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 105. 문자열을 정수로 변환하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 106. 0 떼기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 107. 두 수의 합 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 108. 문자열로 변환 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 109. 배열의 원소 삭제하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 110. 부분 문자열인지 확인하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 111. 부분 문자열 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 112. 꼬리 문자열 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 113. 정수 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 114. 주사위 게임1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 115. 날짜 비교하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 116. 커피 심부름 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 117. 그림 확대 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 118. 조건에 맞게 수열 변환하기3 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 119. l로 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 120. 특별한 이차원 배열1 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 121. 정수를 나선형으로 배치하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 122. 특별한 이차원 배열2 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 123. 정사각형으로 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 124. 이차원 배열 대각선 순회하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+
+
 
 * ### 2020 KAKAO BLIND RECRUITMENT
 > 1. [문자열 압축](https://github.com/chimy2/CodingTest/blob/master/ProblemCollection/src/kakao_blind_recruitment2020/StringCompression.java)
