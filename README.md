@@ -394,6 +394,309 @@
 [Python]() )
 
 
+* ### 코딩테스트
+
+> 1. 옹알이 (1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 2. 다음에 올 숫자 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 3. 연속된 수의 합 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 4. 종이 자르기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 5. 문자열 밀기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 6. 잘라서 배열로 저장하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 7. 7의 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 8. 문자열 정렬하기 (2) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 9. 세균 증식 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 10. 제곱수 판별하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 11. 문자열안에 문자열 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 12. OX퀴즈 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 13. 자릿수 더하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 14. n의 배수 고르기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 15. 숫자 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 16. 배열의 유사도 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 17. 문자열 계산하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 18. 가장 큰 수 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 19. 편지 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 20. 약수 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 21. 한 번만 등장한 문자 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 22. 인덱스 바꾸기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 23. 영어가 싫어요 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 24. 대문자와 소문자 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 25. 암호 해독 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 26. 369게임 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 27. 가까운 수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 28. 삼각형의 완성조건 (1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 29. 중복된 문자 제거 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 30. k의 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 31. A로 B 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 32. 이진수 더하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 33. 치킨 쿠폰 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 34. 로그인 성공? ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 35. 등수 매기기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 36. 특이한 정렬 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 37. 유한소수 판별하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 38. 겹치는 선분의 길이 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 39. 평행 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 40. 저주의 숫자3 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 41. 외계어 사전 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 42. 삼각형의 완성조건 (2) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 43. 안전지대 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 44. 숨어있는 숫자의 덧셈 (2) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 45. 다항식 더하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 46. 최댓값 만들기 (2) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 47. 캐릭터의 좌표 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 48. 직사각형 넓이 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 49. 배열 원소의 길이 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 50. 컨트롤 제트 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 51. 소인수분해 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 52. 숨어있는 숫자의 덧셈 (1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 53. 문자열 정렬하기 (1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 54. 모음 제거 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 55. 팩토리얼 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 56. 최댓값 만들기(1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 57. 합성수 찾기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 58. 주사위의 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 59. 배열 회전시키기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 60. 공 던지기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 61. 2차원으로 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 62. 점의 위치 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 63. 구슬을 나누는 경우의 수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 64. 가위 바위 보 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 65. 모스부호 (1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 66. 개미 군단 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 67. 순서쌍의 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 68. 진료순서 정하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 69. 외계행성의 나이 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 70. 배열 자르기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 71. 짝수의 합 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 72. 양꼬치 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 73. 각도기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 74. 특정 문자 제거하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 75. 문자 반복 출력하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 76. 짝수 홀수 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 77. 직각삼각형 출력하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 78. 문자열 뒤집기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 79. 배열 뒤집기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 80. 나이 출력 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 81. 아이스 아메리카노 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 82. 옷가게 할인 받기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 83. 배열의 평균값 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 84. 피자 나눠 먹기 (3) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 85. 피자 나눠 먹기 (2) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 86. 피자 나눠 먹기 (1) ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 87. 짝수는 싫어요 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 88. 최빈값 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 89. 중앙값 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 90. 나머지 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 91. 배열 두 배 만들기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 92. 분수의 덧셈 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 93. 숫자 비교하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 94. 두 수의 나눗셈 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 95. 몫 구하기 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 96. 두 수의 곱 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 97. 두 수의 차 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 98. 두 수의 합 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 99. 머쓱이보다 키 큰 사람 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+> 100. 중복된 숫자 개수 ( [Java]() |
+[JavaScript]() |
+[Python]() )
+
 
 * ### 2020 KAKAO BLIND RECRUITMENT
 > 1. [문자열 압축](https://github.com/chimy2/CodingTest/blob/master/ProblemCollection/src/kakao_blind_recruitment2020/StringCompression.java)

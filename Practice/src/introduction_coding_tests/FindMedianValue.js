@@ -1,4 +1,3 @@
 function solution(array) {
-    array.sort();
-    return array[array.length / 2];
+    return array.sort((i, j) => i - j)[parseInt(array.length / 2)];
 }
